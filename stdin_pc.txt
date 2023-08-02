@@ -1,0 +1,27 @@
+./Data.CS.SFSU.txt
+!help
+
+aRRow
+adverb
+noun noun reverse
+cSc220
+CSc340 noun distinct REVERSE
+book NOUN distinct reverse
+placeHOLDER
+placeholder distinct
+placeHolder adjective reverse
+distinCT DISTINct
+distinct noun distinct REVERSE
+reverse reverse
+reverse distinct reVERSE
+reverse ok
+reverse noun ok
+reverse noun ok distinct
+reverse noun distinct ok
+reverse ok ok ok
+reverse reverse ok ok
+reverse distinct reverse ok
+reverse distinct reverse ok ok
+reverse adverb
+facebook
+!Q

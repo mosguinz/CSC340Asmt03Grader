@@ -1,0 +1,1 @@
+echo "$(./a.out < stdin_pc.txt)" > pc_stdout.txt

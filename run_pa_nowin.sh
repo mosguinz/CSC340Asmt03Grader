@@ -1,0 +1,1 @@
+./a.out < stdin_pa_nowin.txt

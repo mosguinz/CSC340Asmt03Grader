@@ -1,0 +1,4 @@
+*.idea/
+*part*/
+cmake-build-debug/
+a.out
