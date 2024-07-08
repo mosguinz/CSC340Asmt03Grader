@@ -1,1 +1,0 @@
-./a.out < stdin_pa_xwin.txt
