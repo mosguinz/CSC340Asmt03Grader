@@ -1,7 +1,7 @@
 #!/bin/zsh
 setopt nullglob
 
-g++ -- *[aA]/*.cpp *[aA]/*.h
+g++ -std=c++17 -- *[aA]/*.cpp *[aA]/*.h
 
 # No win
 echo "Checking no win"
