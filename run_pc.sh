@@ -1,6 +1,14 @@
 #!/bin/zsh
 setopt nullglob
 
+ctrl_c() {
+  printf "Cleaning up..."
+  rm -f a.out a.txt
+  exit
+}
+
+trap ctrl_c INT
+
 # Check if the source text file is in the folder
 for dir in ./*[cC]/; do
   if [[ -f "$dir/Data.CS.SFSU.txt" ]]; then
