@@ -15,7 +15,7 @@ for dir in ./*[cC]/; do
     # If it is, check if it has been modified
     if ! cmp -s pc_source_file.txt "$dir/Data.CS.SFSU.txt"; then
       echo "Source text file may have been modified."
-      vimdiff -c "set diffopt+=iwhiteall foldlevel=99999" "$dir/Data.CS.SFSU.txt" pc_source_file.txt
+      vimdiff -c "set diffopt+=iwhiteall" "$dir/Data.CS.SFSU.txt" pc_source_file.txt
     fi
   fi
 done
