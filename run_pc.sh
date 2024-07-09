@@ -20,9 +20,6 @@ for dir in ./*[cC]/; do
   fi
 done
 
-echo "Copying text file to part C folder"
-cp pc_source_file.txt ./*[cC]/
-
 g++ -std=c++17 -- *[cC]/*.cpp *[cC]/*.h
 
 echo "Attempting to run normally, expecting first line to specify file path"
