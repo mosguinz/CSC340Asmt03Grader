@@ -28,11 +28,12 @@ vimdiff -c "set diffopt+=iwhiteall foldlevel=99999" a.txt pc_stdout.txt
 rm a.txt
 
 while true; do
-  echo "1: Run again without file path"
-  echo "2: Run again with original source file"
-  echo "3: Run again manually"
-  echo "4: Exit"
-  echo -n "Select (1-4): "
+  echo "1: Run without specifying source file path"
+  echo "2: Run with student's attached source file"
+  echo "3: Run with the source file named \"Data.CS.SFSU.txt\""
+  echo "4: Run manually"
+  echo "5: Exit"
+  echo -n "Select (1-5): "
   read choice
 
   case $choice in
@@ -46,9 +47,14 @@ while true; do
       vimdiff -c "set diffopt+=iwhiteall foldlevel=99999" a.txt pc_stdout.txt
       ;;
     3)
-      ./a.out
+      cp pc_source_file.txt Data.CS.SFSU.txt
+      ./a.out < pc_stdin_regular.txt > a.txt
+      vimdiff -c "set diffopt+=iwhiteall foldlevel=99999" a.txt pc_stdout.txt
       ;;
     4)
+      ./a.out
+      ;;
+    5)
       break
       ;;
     *)
@@ -57,4 +63,4 @@ while true; do
   esac
 done
 
-rm a.out a.txt
+rm -f a.out a.txt Data.CS.SFSU.txt
